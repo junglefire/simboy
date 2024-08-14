@@ -3,34 +3,7 @@
 # GitHub: https://github.com/Baekalfen/PyBoy
 #
 
-from pyboy.plugins.base_plugin import PyBoyGameWrapper
-
-# imports
-from pyboy.plugins.window_sdl2 import WindowSDL2 # isort:skip
-from pyboy.plugins.window_open_gl import WindowOpenGL # isort:skip
-from pyboy.plugins.window_null import WindowNull # isort:skip
-from pyboy.plugins.debug import Debug # isort:skip
-from pyboy.plugins.disable_input import DisableInput # isort:skip
-from pyboy.plugins.auto_pause import AutoPause # isort:skip
-from pyboy.plugins.record_replay import RecordReplay # isort:skip
-from pyboy.plugins.rewind import Rewind # isort:skip
-from pyboy.plugins.screen_recorder import ScreenRecorder # isort:skip
-from pyboy.plugins.screenshot_recorder import ScreenshotRecorder # isort:skip
-from pyboy.plugins.debug_prompt import DebugPrompt # isort:skip
-from pyboy.plugins.game_wrapper_super_mario_land import GameWrapperSuperMarioLand # isort:skip
-from pyboy.plugins.game_wrapper_tetris import GameWrapperTetris # isort:skip
-from pyboy.plugins.game_wrapper_kirby_dream_land import GameWrapperKirbyDreamLand # isort:skip
-from pyboy.plugins.game_wrapper_pokemon_gen1 import GameWrapperPokemonGen1 # isort:skip
-from pyboy.plugins.game_wrapper_pokemon_pinball import GameWrapperPokemonPinball # isort:skip
-# imports end
-
-
-def parser_arguments():
-	# yield_plugins
-	yield WindowSDL2.argv
-	# yield_plugins end
-	pass
-
+from pyboy.plugins.window_sdl2 import WindowSDL2 
 
 class PluginManager:
 	def __init__(self, pyboy, mb, pyboy_argv):

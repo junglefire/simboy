@@ -66,15 +66,12 @@ class PyBoy:
 			cgb,
 			randomize=randomize,
 		)
-
 		# Performance measures
 		self.avg_pre = 0
 		self.avg_tick = 0
 		self.avg_post = 0
-
 		# Absolute frame count of the emulation
 		self.frame_count = 0
-
 		self.set_emulation_speed(1)
 		self.paused = False
 		self.events = []
