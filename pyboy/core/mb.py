@@ -2,7 +2,7 @@
 # License: See LICENSE.md file
 # GitHub: https://github.com/Baekalfen/PyBoy
 #
-
+import logging as logger
 from pyboy import utils
 from pyboy.utils import STATE_VERSION
 
@@ -12,8 +12,6 @@ INTR_VBLANK, INTR_LCDC, INTR_TIMER, INTR_SERIAL, INTR_HIGHTOLOW = [1 << x for x 
 OPCODE_BRK = 0xDB
 
 import pyboy
-
-logger = pyboy.logging.get_logger(__name__)
 
 
 class Motherboard:

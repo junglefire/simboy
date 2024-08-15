@@ -3,6 +3,7 @@
 # GitHub: https://github.com/Baekalfen/PyBoy
 #
 
+import logging as logger
 import time
 
 from pyboy import utils
@@ -16,8 +17,6 @@ except ImportError:
     sdl2 = None
 
 import pyboy
-
-logger = pyboy.logging.get_logger(__name__)
 
 ROWS, COLS = 144, 160
 

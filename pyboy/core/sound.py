@@ -6,7 +6,7 @@
 # http://gbdev.gg8.se/wiki/articles/Sound_Controller
 # http://gbdev.gg8.se/wiki/articles/Gameboy_sound_hardware
 # http://www.devrs.com/gb/files/hosted/GBSOUND.txt
-
+import logging as logger
 from array import array
 from ctypes import c_void_p
 
@@ -19,7 +19,6 @@ except ImportError:
 
 import pyboy
 
-logger = pyboy.logging.get_logger(__name__)
 
 SOUND_DESYNC_THRESHOLD = 5
 CPU_FREQ = 4213440 # hz

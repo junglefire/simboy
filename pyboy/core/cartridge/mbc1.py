@@ -2,13 +2,11 @@
 # License: See LICENSE.md file
 # GitHub: https://github.com/Baekalfen/PyBoy
 #
-
+import logging as logger
 import pyboy
 from pyboy import utils
 
 from .base_mbc import BaseMBC
-
-logger = pyboy.logging.get_logger(__name__)
 
 
 class MBC1(BaseMBC):

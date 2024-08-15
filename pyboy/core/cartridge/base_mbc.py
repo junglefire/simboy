@@ -2,7 +2,7 @@
 # License: See LICENSE.md file
 # GitHub: https://github.com/Baekalfen/PyBoy
 #
-
+import logging as logger
 import array
 import os
 
@@ -11,8 +11,6 @@ from pyboy import utils
 from pyboy.utils import IntIOWrapper
 
 from .rtc import RTC
-
-logger = pyboy.logging.get_logger(__name__)
 
 
 class BaseMBC:
